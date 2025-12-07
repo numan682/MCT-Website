@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic document setup plus shared fonts, icons, and styles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCT Department | Multimedia & Creative Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Light grain overlay for texture across the page -->
+  <div class="noise-layer"></div>
+  <!-- Sticky navigation bar with branding and anchor links -->
+  <header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <img src="assets/images/diulogoside.png" alt="MCT Department" class="brand-logo me-2">
+          <div class="brand-text">
+            <div class="brand-title">MCT Department</div>
+            <small class="text-muted">Multimedia & Creative Technology</small>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#success">Highlights</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+            <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tuition">Tuition</a></li>
+            <li class="nav-item"><a class="nav-link" href="#events">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <a class="btn btn-gradient ms-lg-3" href="#contact">Apply / Visit</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content wrapper -->
+  <main class="page-wrap">
+    <!-- Hero banner with headline, stats, and lab slider -->
+    <section class="hero" id="home">
+      <div class="hero-ambient">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+      <div class="container">
+        <div class="hero-shell glass-liquid">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 order-lg-1 order-2">
+              <div class="hero-visual">
+                <div class="hero-glow"></div>
+                <div class="hero-card hero-card-visual">
+                  <div class="hero-card-top">
+                    <div class="label">Inside MCT</div>
+                    <div class="pill badge-soft">Hands-on Labs</div>
+                  </div>
+                  <div class="swiper hero-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="hero-slide" style="background-image:url('assets/images/course-1.jpg');">
+                          <div class="slide-overlay">
+                            <h3>Immersive Media Lab</h3>
+                            <p>VR storytelling and interactive installations guided by mentors.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="hero-slide" style="background-image:url('assets/images/image_2.jpg');">
+                          <div class="slide-overlay">
+                            <h3>Motion & Sound Studio</h3>
+                            <p>Compose sonic identities and kinetic visuals for real clients.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="hero-slide" style="background-image:url('assets/images/image_3.jpg');">
+                          <div class="slide-overlay">
+                            <h3>Research & Innovation</h3>
+                            <p>AI art, creative coding, and UX futures in cross-disciplinary teams.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="mini-cards">
+                    <div class="mini glass-liquid">
+                      <p class="text-muted small">Ranking</p>
+                      <h4>#1 Creative Tech</h4>
+                      <p>National Student Choice Awards 2024</p>
+                    </div>
+                    <div class="mini glass-liquid">
+                      <p class="text-muted small">Placement</p>
+                      <h4>95%</h4>
+                      <p>Internships secured before graduation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1">
+              <div class="eyebrow" data-hero="eyebrow">Department of Multimedia & Creative Technology</div>
+              <h1 class="display-5 fw-bold" data-hero="title">Create. Innovate. Shape digital experiences.</h1>
+              <p class="lead" data-hero="lead">MCT blends design, media, and engineering to prepare students for creative technology careers.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#courses" class="btn btn-gradient" data-hero="cta">Explore Programs</a>
+                <a href="#tuition" class="btn btn-outline-light" data-hero="cta-alt">Tuition & Aid</a>
+              </div>
+              <div class="stat-panel mt-4">
+                <div>
+                  <h3>2K+</h3>
+                  <p>Alumni in creative tech roles worldwide.</p>
+                </div>
+                <div>
+                  <h3>25+</h3>
+                  <p>Industry partners for live briefs and sprints.</p>
+                </div>
+                <div>
+                  <h3>15</h3>
+                  <p>Studios for XR, sound, fabrication, and media.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+
+    <!-- Current highlights from the department -->
+    <section class="section" id="success">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap justify-content-between align-items-center">
+          <div>
+            <p class="eyebrow">Highlights</p>
+            <h2>What's happening at MCT right now</h2>
+          </div>
+          <a href="https://daffodilvarsity.edu.bd/department/mct/events" class="link-more" target="_blank" rel="noopener">See all events &rarr;</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8" data-aos="fade-right">
+            <div class="card success-story h-100 glass-liquid">
+              <img src="assets/images/image_2.jpg" class="img-fluid rounded-top feature-img" alt="Future Studios collaboration">
+              <div class="p-4">
+                <p class="eyebrow mb-2">Industry Collaboration</p>
+                <h4 class="mb-2">Future Studios Bangladesh x MCT</h4>
+                <p class="small mb-3">MoU on 3D & CGI with 11 alumni/final-year students already placed; pipeline training on 3ds Max, Substance Painter, and Unreal Engine.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-dark text-light">3D & CGI</span>
+                  <span class="badge bg-primary">Unreal Engine</span>
+                  <span class="badge bg-info text-dark">Pipeline Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-left">
+            <div class="card success-story h-100 glass-liquid alumni-spotlight">
+              <div class="p-4">
+                <div class="mb-3">
+                  <p class="eyebrow mb-1">Alumni Spotlight</p>
+                  <h4 class="mb-0">11 alumni & final-year students at Future Studios</h4>
+                </div>
+                <p class="small mb-3">Industry-aligned training leading to real CGI roles, backed by the Future Studios MoU.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-dark text-light">Placement</span>
+                  <span class="badge bg-primary">Pipeline Ready</span>
+                  <span class="badge bg-success">Internships</span>
+                </div>
+                <ul class="list-unstyled small mb-0 spotlight-list">
+                  <li><span class="ri-graduation-cap-line"></span> MoU-driven pipeline training + internships</li>
+                  <li><span class="ri-tools-line"></span> Tools: Autodesk 3ds Max, Substance Painter, Unreal Engine</li>
+                  <li><span class="ri-hand-heart-line"></span> Ongoing industry-academia collaboration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-3">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card feature-card h-100 glass-liquid">
+              <div class="icon-badge">&#x1F4A1;</div>
+              <h5>Idea to Innovation Challenge '25</h5>
+              <p class="small">Programming + AI prompt challenge + expo showcasing student-built solutions.</p>
+              <a class="link-more" href="https://daffodilvarsity.edu.bd/department/mct/event-detail/406" target="_blank" rel="noopener">Details &rarr;</a>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+            <div class="card feature-card h-100 glass-liquid">
+              <div class="icon-badge">&#x1F393;</div>
+              <h5>Farewell Ceremony 2025 - Batch 31</h5>
+              <p class="small">Celebrating graduates and the creative, innovation-first culture they carry forward.</p>
+              <a class="link-more" href="https://daffodilvarsity.edu.bd/department/mct/event-detail/405" target="_blank" rel="noopener">Details &rarr;</a>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+            <div class="card feature-card h-100 glass-liquid">
+              <div class="icon-badge">&#x1F91D;</div>
+              <h5>MoU with Future Studios</h5>
+              <p class="small">Industry-academia bridge for CGI talent; internships and real production exposure.</p>
+              <a class="link-more" href="https://daffodilvarsity.edu.bd/department/mct/event-detail/407" target="_blank" rel="noopener">Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About block with vision, mission, and culture highlights -->
+    <section class="section alt" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <p class="eyebrow">About Us</p>
+            <h2>Where imagination meets engineering rigor</h2>
+            <p>The Multimedia and Creative Technology Department at Daffodil International University blends storytelling, interaction design, and computing. Since 2010, we have produced creators who build meaningful experiences across web, XR, audio, and motion.</p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="pill">
+                  <h5>Vision</h5>
+                  <p>Lead creative technology education in South Asia through innovation and ethical practice.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="pill">
+                  <h5>Mission</h5>
+                  <p>Empower students with cross-disciplinary skills, industry mentorship, and research-driven learning.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="grid-cards">
+              <div class="grid-card glass">
+                <h4>Studio Culture</h4>
+                <p>Agile sprints, critiques, and live briefs to mirror creative agencies.</p>
+              </div>
+              <div class="grid-card glass">
+                <h4>Research</h4>
+                <p>Labs exploring AI art, inclusive typography, sonic identities, and interactive media.</p>
+              </div>
+              <div class="grid-card glass">
+                <h4>Community</h4>
+                <p>Design jams, film festivals, and hackathons open to all disciplines.</p>
+              </div>
+              <div class="grid-card glass">
+                <h4>Global</h4>
+                <p>Exchange programs and showcases at SIGGRAPH, SXSW, and Ars Electronica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculty directory with search -->
+    <section class="section" id="faculty">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap justify-content-between align-items-center">
+          <div>
+            <p class="eyebrow">Faculty</p>
+            <h2>Meet the mentors behind the magic</h2>
+          </div>
+          <div class="search-control">
+            <input type="search" id="facultySearch" class="form-control" placeholder="Search by name or area (e.g., UX, XR)">
+          </div>
+        </div>
+        <div class="row g-4" id="facultyGrid">
+          <!-- Faculty cards injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses, filters, and tuition details -->
+    <section class="section alt" id="courses">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap justify-content-between align-items-center">
+          <div>
+            <p class="eyebrow">Courses</p>
+            <h2>Curriculum that bridges creativity and computation</h2>
+            <p class="text-muted">Filter by semester or search for titles, codes, or topics.</p>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-chip active" data-semester="1">1st</button>
+            <button class="btn btn-chip" data-semester="2">2nd</button>
+            <button class="btn btn-chip" data-semester="3">3rd</button>
+            <button class="btn btn-chip" data-semester="4">4th</button>
+            <button class="btn btn-chip" data-semester="5">5th</button>
+            <button class="btn btn-chip" data-semester="6">6th</button>
+            <button class="btn btn-chip" data-semester="7">7th</button>
+            <button class="btn btn-chip" data-semester="8">8th</button>
+          </div>
+        </div>
+        <div class="row align-items-center g-3 mb-4">
+          <div class="col-md-8">
+            <input type="search" id="courseSearch" class="form-control form-control-lg" placeholder="Search courses by title, code, or topic">
+          </div>
+          <div class="col-md-4 text-md-end">
+            <span class="badge bg-dark text-light" id="courseCount">0 courses</span>
+          </div>
+        </div>
+        <div class="row g-4" id="courseList">
+          <!-- Courses injected by JS -->
+        </div>
+        <div class="tuition-eligibility-wrap" id="tuition">
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="card glass-liquid p-4 h-100">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                  <div>
+                    <p class="eyebrow mb-1">Tuition & Fees</p>
+                    <h4 class="mb-1">Local tuition breakdown</h4>
+                    <p class="text-muted small mb-0">Updated schedule</p>
+                  </div>
+                  <a href="https://daffodilvarsity.edu.bd/department/mct/local-tuition" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener">View page</a>
+                </div>
+                <div class="tuition-grid">
+                  <div class="tuition-card glass-liquid">
+                    <div class="tuition-label">Credit Hours</div>
+                    <div class="tuition-value">147</div>
+                  </div>
+                  <div class="tuition-card glass-liquid">
+                    <div class="tuition-label">Program Duration</div>
+                    <div class="tuition-value">4 Years</div>
+                  </div>
+                  <div class="tuition-card glass-liquid">
+                    <div class="tuition-label">Admission Fees (Tk)</div>
+                    <div class="tuition-value">59,550</div>
+                  </div>
+                  <div class="tuition-card glass-liquid">
+                    <div class="tuition-label">Semester Cost (Tk)</div>
+                    <div class="tuition-value">60,000</div>
+                  </div>
+                  <div class="tuition-card glass-liquid">
+                    <div class="tuition-label">Total Tuition Fees (Tk)</div>
+                    <div class="tuition-value">508,950</div>
+                  </div>
+                  <div class="tuition-card glass-liquid highlight-card">
+                    <div>
+                      <div class="tuition-label">Total Fees (Tk)</div>
+                      <div class="tuition-value">744,150</div>
+                    </div>
+                    <span class="badge bg-primary">All-inclusive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card glass-liquid p-4 h-100">
+                <p class="eyebrow mb-1">Admission Eligibility</p>
+                <h5 class="mb-3">Who can apply?</h5>
+                <ul class="list-unstyled small">
+                  <li><strong>General:</strong> Minimum GPA 2.5 in SSC & HSC (or equivalent); minimum -C- in English.</li>
+                  <li><strong>Diploma:</strong> Minimum GPA 2.5 in SSC and 4-year Diploma in Computer Tech/Graphics Design.</li>
+                  <li><strong>English Medium:</strong> 5 O-level + 2 A-level; among 7 subjects: at least four B grades and three C grades.</li>
+                </ul>
+                <a href="https://daffodilvarsity.edu.bd/department/mct/admission-eligibility" class="link-more" target="_blank" rel="noopener">Full eligibility ?</a>
+                <hr class="my-3">
+                <p class="eyebrow mb-1">Scholarships</p>
+                <h5 class="mb-2">Financial aid & waivers</h5>
+                <ul class="list-unstyled small mb-3">
+                  <li>- Result-based waivers (SSC/HSC/Undergraduate)</li>
+                  <li>- Need-based waivers & merit scholarships</li>
+                  <li>- Special quotas (Freedom Fighter, CSR, startup, endowments)</li>
+                </ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-gradient btn-sm" href="https://daffodilvarsity.edu.bd/dept/mct/scholarship/diu-scholarship" target="_blank" rel="noopener">DIU Scholarship</a>
+                  <a class="btn btn-outline-light btn-sm" href="https://daffodilvarsity.edu.bd/images/download/waiver-policy2025.pdf" target="_blank" rel="noopener">Waiver Policy (PDF)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event timeline to surface recent news -->
+    <section class="section alt" id="events">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap justify-content-between align-items-center">
+          <div>
+            <p class="eyebrow">News & Events</p>
+            <h2>Stay in sync with workshops, seminars, and updates</h2>
+          </div>
+          <a href="https://daffodilvarsity.edu.bd/department/mct/events" class="link-more" target="_blank" rel="noopener">All events ?</a>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="time">28 Aug</div>
+            <div class="content glass">
+              <h5>Farewell Ceremony 2025 - MCT Batch 31</h5>
+              <p>Celebrating graduates and their creative journey; carrying forward the MCT spirit of innovation.</p>
+              <span class="badge bg-success">Student Life</span>
+              <a class="link-more d-block mt-2" href="https://daffodilvarsity.edu.bd/department/mct/event-detail/405" target="_blank" rel="noopener">Details ?</a>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="time">21 Aug</div>
+            <div class="content glass">
+              <h5>Idea to Innovation Challenge - MCT (I2I -25)</h5>
+              <p>Programming + AI prompt challenge + expo showcasing student-built solutions and winners.</p>
+              <span class="badge bg-primary">Innovation</span>
+              <a class="link-more d-block mt-2" href="https://daffodilvarsity.edu.bd/department/mct/event-detail/406" target="_blank" rel="noopener">Details ?</a>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="time">23 Jun</div>
+            <div class="content glass">
+              <h5>Official MoU with Future Studios Bangladesh</h5>
+              <p>Industry-academia collaboration in 3D & CGI; pipeline training with 3ds Max, Substance Painter, Unreal Engine.</p>
+              <span class="badge bg-info text-dark">Industry</span>
+              <a class="link-more d-block mt-2" href="https://daffodilvarsity.edu.bd/department/mct/event-detail/407" target="_blank" rel="noopener">Details ?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ accordion with quick student answers -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header d-flex flex-wrap justify-content-between align-items-center">
+          <div>
+            <p class="eyebrow">FAQs</p>
+            <h2>Top questions from MCT students</h2>
+          </div>
+          <a class="link-more" href="https://daffodilvarsity.edu.bd/department/mct/faq" target="_blank" rel="noopener">View all FAQs ?</a>
+        </div>
+        <div class="accordion faq-accordion" id="faqAccordion">
+          <div class="accordion-item glass">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                How to complete course registration (new students)?
+              </button>
+            </h2>
+            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Pay registration fees for clearance, submit to batch coordinator, then confirm completion on the student portal.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                How can I add/drop a course after registration?
+              </button>
+            </h2>
+            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Within 7 days after registration, contact your batch advisor to process Change/Add/Drop and verify on the portal.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                How do I drop a semester before registration?
+              </button>
+            </h2>
+            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                If you can?t pay and haven?t registered, drop the semester in the student portal.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <h2 class="accordion-header" id="faq4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                How do I drop a semester after registration?
+              </button>
+            </h2>
+            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Apply to Dean via Head within 2 weeks after registration; submit approvals to Registrar and verify in the portal.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item glass">
+            <h2 class="accordion-header" id="faq5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="#faqCollapse5">
+                How to take extra courses in a semester?
+              </button>
+            </h2>
+            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Apply to the Dean through the Head listing course names and credits you want to add.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact details plus simple inquiry form -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <p class="eyebrow">Contact</p>
+            <h2>Visit, collaborate, or ask us anything</h2>
+            <p class="text-muted">Reach out for admissions, partnerships, or to host a workshop with us.</p>
+            <ul class="list-unstyled contact-list">
+              <li><strong>Address:</strong> Daffodil Smart City, Birulia-Savar, Dhaka 1216, Bangladesh</li>
+              <li><strong>Phone:</strong> +880 9612-120120</li>
+              <li><strong>Email:</strong> mct@daffodilvarsity.edu.bd</li>
+            </ul>
+            <div class="map ratio ratio-4x3 rounded-4 overflow-hidden mt-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.712771605332!2d90.31870460503015!3d23.876605446677036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ada2664e21%3A0x3c872fd17bc11ddb!2sDaffodil%20International%20University!5e1!3m2!1sen!2sbd!4v1765017586162!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Daffodil International University Map"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="card form-card glass">
+              <div class="card-body">
+                <h4>Contact Form</h4>
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label">Name</label>
+                      <input type="text" name="name" class="form-control" required>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Email</label>
+                      <input type="email" name="email" class="form-control" required>
+                      <div class="invalid-feedback">Provide a valid email.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Message</label>
+                      <textarea name="message" class="form-control" rows="4" required></textarea>
+                      <div class="invalid-feedback">Tell us how we can help.</div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center gap-3">
+                      <button type="submit" class="btn btn-gradient">Send Message</button>
+                      <span id="formStatus" class="text-muted small"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with brand, quick links, and socials -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="brand-title mb-2">MCT Department</div>
+          <p class="text-muted">Design, code, and media converging to shape the future of creative technology.</p>
+          <div class="socials d-flex gap-3">
+            <a href="https://www.facebook.com/daffodilvarsity.edu.bd" aria-label="Facebook" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/daffodil.university/" aria-label="Instagram" target="_blank" rel="noopener"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.youtube.com/user/webmasterdiu" aria-label="YouTube" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.linkedin.com/company/daffodil-international-university/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-light">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Programs</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-light">Downloads</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#">Prospectus</a></li>
+            <li><a href="#">Brochure</a></li>
+            <li><a href="#">Scholarship Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta mt-4 d-flex justify-content-between flex-wrap">
+        <small>© 2024 Multimedia & Creative Technology Department</small>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btn back-to-top" id="backToTop" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
+
+  <!-- Vendor bundles plus custom scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
